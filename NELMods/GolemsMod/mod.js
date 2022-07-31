@@ -26,7 +26,7 @@ G.AddData({
         //Golem ressource
         new G.Res({
             name:'golem',
-            desc:'[golem] made from [mud] or [clay].//[mud golem] make an addition to your [worker,Workforce].//[golem] dies after a certain amount of time.',
+            desc:'[golem] made from [mud] or [clay].//[mud golem] makes an addition to your [worker,Workforce].//[golem] dies after a certain amount of time.',
             //startWith:5,
             //visible:true,
             partOf:'worker',
@@ -35,7 +35,7 @@ G.AddData({
             tick:function(me,tick)
 		    {  
                 if (me.amount>0)
-			    {
+			    { //suggestion: make it leave some leftover like clay/mud ;)
                     if (tick%1==0) //Every second
                     {
                         var toRemove = [];
